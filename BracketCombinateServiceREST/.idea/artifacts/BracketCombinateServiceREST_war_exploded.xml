@@ -20,7 +20,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="D:\IdeaProjects\BracketCombinateServiceREST\target/MANIFEST.MF" />
+        <element id="file-copy" path="D:\IdeaProjects\BracketCombinateService\BracketCombinateServiceREST\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="BracketCombinateServiceREST/web/Web" />
     </root>

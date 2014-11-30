@@ -3,9 +3,7 @@ BracketCombinateService
 
 Class project. Will autogenerate final four bracket and pick winners. Will allow for user to create own final four or create partial and generate the rest.
 
-Right now it does not work. Problem with bean generation.
-
-Calls that should work:
+Calls:
 
 Team Controller:
 http://localhost:8080/teams
@@ -26,4 +24,3 @@ http://localhost:8080/FinalFour/champions
 
 Selected Final Four Champions:
 http://localhost:8080/FinalFour/champions/pick?teamIDs="1,17,33,49"&southEastChampion="Florida"&westMidwestChampion="Wichita State"&nationalChampion="Florida"
-http://localhost:8080/FinalFour/champions/teamIDs/{teamIDs}/southEastChampion/{southEastChampion}/westMidwestChampion/{westMidwestChampion}/nationalChampion/{nationalChampion}

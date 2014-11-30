@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import proj.model.*;
 import proj.services.TeamService;
 
+import java.util.Collection;
+
 @Controller
 @RequestMapping("/teams")
 public class TeamController {
@@ -29,7 +31,6 @@ public class TeamController {
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody
     Teams getAllTeams() {
-        //model.addAttribute("message", "Hello world!");
         return teamService.getAllTeams();
     }
 

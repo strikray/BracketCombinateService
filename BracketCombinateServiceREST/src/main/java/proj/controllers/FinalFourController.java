@@ -83,22 +83,4 @@ public class FinalFourController {
 
         return finalFourService.getSelectedFinalFourChampions(teamList, southEastChampion, westMidwestChampion, nationalChampion);
     }
-
-    // Does not work
-    // This is handling path arguments
-    @RequestMapping(value="/champions/teamIDs/{teamIDs}/southEastChampion/{southEastChampion}/westMidwestChampion/{westMidwestChampion}/nationalChampion/{nationalChampion}", method = RequestMethod.GET)
-    public @ResponseBody
-    FinalFour pathPickFinalFourChampions(@PathVariable("teamIDs") String teamIDs, @PathVariable("southEastChampion") String southEastChampion, @PathVariable("westMidwestChampion") String westMidwestChampion, @PathVariable("nationalChampion") String nationalChampion) {
-
-        String[] ids = teamIDs.split(",");
-        int[] teamList = new int[ids.length];
-        for (int i=0; i<ids.length; i++)
-        {
-            try {
-                teamList[i] = Integer.parseInt(ids[i]);
-            } catch (NumberFormatException nfe) {};
-        }
-
-        return finalFourService.getSelectedFinalFourChampions(teamList, southEastChampion, westMidwestChampion, nationalChampion);
-    }
 }

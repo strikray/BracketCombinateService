@@ -26,6 +26,7 @@ public class FinalFourController {
         return finalFourService.getRandomFinalFour();
     }
 
+    //Cannot handle quotes
     @RequestMapping(value="/pick", method = RequestMethod.GET)
     public @ResponseBody
     FinalFour paramsPickFinalFour(@RequestParam("teamIDs") String teamIDs) {
@@ -42,6 +43,7 @@ public class FinalFourController {
         return finalFourService.getSelectedFinalFour(teamList);
     }
 
+    //Cannot handle quotes
     @RequestMapping(value="/teamIDs/{teamIDs}", method = RequestMethod.GET)
     public @ResponseBody
     FinalFour pathPickFinalFour(@PathVariable("teamIDs") String teamIDs) {
@@ -82,6 +84,7 @@ public class FinalFourController {
         return finalFourService.getSelectedFinalFourChampions(teamList, southEastChampion, westMidwestChampion, nationalChampion);
     }
 
+    // Does not work
     // This is handling path arguments
     @RequestMapping(value="/champions/teamIDs/{teamIDs}/southEastChampion/{southEastChampion}/westMidwestChampion/{westMidwestChampion}/nationalChampion/{nationalChampion}", method = RequestMethod.GET)
     public @ResponseBody

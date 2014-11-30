@@ -33,7 +33,7 @@ public class TeamController {
         return teamService.getAllTeams();
     }
 
-    @RequestMapping(value="{id}", method=RequestMethod.GET)
+    @RequestMapping(value="/{id}", method=RequestMethod.GET)
     public @ResponseBody Team
     getDataInJSON(@PathVariable int id)
     {
